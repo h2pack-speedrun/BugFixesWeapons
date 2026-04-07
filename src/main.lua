@@ -63,9 +63,9 @@ public.definition = {
     id           = "BugFixesWeapons",
     name         = "Bug Fixes: Weapons & Attacks",
     category     = "Bug Fixes",
-    group        = "Weapons & Attacks",
+    subgroup     = "Weapons & Attacks",
     tooltip      = "Collection of bug fixes for weapons and attacks.",
-    default      = true,
+    default      = dataDefaults.Enabled,
     affectsRunData = true,
 }
 
@@ -114,4 +114,3 @@ end)
 local uiCallback = lib.standaloneUI(public.definition, store)
 ---@diagnostic disable-next-line: redundant-parameter
 rom.gui.add_to_menu_bar(uiCallback)
-
