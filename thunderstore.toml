@@ -3,10 +3,10 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "adamant"
-name = "SpeedrunBugFixesWeapons"
+name = "Speedrun_BugFixesWeapons"
 description = "TODO: description for BugFixesWeapons"
 versionNumber = "0.0.1"
-websiteUrl = "https://github.com/h2pack-speedrun/adamant-SpeedrunBugFixesWeapons"
+websiteUrl = "https://github.com/h2pack-speedrun/adamant-Speedrun_BugFixesWeapons"
 containsNsfwContent = false
 
 [package.dependencies]
