@@ -25,7 +25,7 @@ table.insert(patch_fns, {
 
 table.insert(hook_fns, function()
     lib.hooks.Wrap(internal, "StartNewRun", function(baseFunc, prevRun, args)
-        if not internal.store.read("SeleneFix") or not lib.isModuleEnabled(internal.store, public.definition.modpack) then
+        if not internal.store.read("SeleneFix") or not lib.isModuleEnabled(internal.store, internal.PACK_ID) then
             return baseFunc(prevRun, args)
         end
         local currentRun = baseFunc(prevRun, args)
@@ -36,7 +36,7 @@ table.insert(hook_fns, function()
     end)
 
     lib.hooks.Wrap(internal, "SpawnRoomReward", function(baseFunc, eventSource, args)
-        if not internal.store.read("SeleneFix") or not lib.isModuleEnabled(internal.store, public.definition.modpack) then
+        if not internal.store.read("SeleneFix") or not lib.isModuleEnabled(internal.store, internal.PACK_ID) then
             return baseFunc(eventSource, args)
         end
         if HeroHasTrait("SuitHexAspect") and HeroHasTrait("SpellTalentKeepsake") and game.CurrentRun.CurrentRoom.BiomeStartRoom then

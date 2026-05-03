@@ -1,11 +1,5 @@
--- luacheck: globals BugFixesWeaponsInternal public
+-- luacheck: globals BugFixesWeaponsInternal
 local internal = BugFixesWeaponsInternal
-
-public.definition.patchPlan = function(plan, activeStore)
-    if internal.BuildPatchPlan then
-        internal.BuildPatchPlan(plan, activeStore)
-    end
-end
 
 function internal.BuildPatchPlan(plan, activeStore)
     for _, b in ipairs(internal.patch_fns) do
