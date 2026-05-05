@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-05-05
+
 ### Changed
 
 - Moved game hooks to the ModpackLib hook contract for reload-safe registration.
@@ -11,5 +13,6 @@
 
 Initial release
 
-[unreleased]: https://github.com/h2pack-speedrun/adamant-Speedrun_BugFixesWeapons/compare/1.0.0...HEAD
+[unreleased]: https://github.com/h2pack-speedrun/adamant-Speedrun_BugFixesWeapons/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/h2pack-speedrun/adamant-Speedrun_BugFixesWeapons/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/h2pack-speedrun/adamant-Speedrun_BugFixesWeapons/compare/78a5d0660fe3f3c10b5c5e84cfc693c83106441b...1.0.0
