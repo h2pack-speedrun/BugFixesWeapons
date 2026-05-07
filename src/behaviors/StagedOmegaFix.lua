@@ -5,7 +5,7 @@ local patch_fns = internal.patch_fns
 table.insert(option_fns,
     {
         type = "checkbox",
-        configKey = "StagedOmegaFix",
+        alias = "StagedOmegaFix",
         label = "Axe and Blade Omega Channel Fix",
         default = true,
         tooltip =

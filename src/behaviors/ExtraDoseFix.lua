@@ -5,7 +5,7 @@ local patch_fns = internal.patch_fns
 table.insert(option_fns,
     {
         type = "checkbox",
-        configKey = "ExtraDoseFix",
+        alias = "ExtraDoseFix",
         label = "Extra Dose Fix",
         default = true,
         tooltip =
